@@ -1,0 +1,16 @@
+<h1>Add New Acount</h1>
+
+<%= form_for @acount do |f|%>
+<p>
+	<%=f.label :acount_number%>
+	<%=f.text_field :acount_number%>
+</p>
+<p>
+	<%=f.label :suplier_id_id%>
+	<%=f.text_field :suplier_id%>
+</p>
+<p>
+	<%=f.submit%>
+</p>
+
+<% end %>

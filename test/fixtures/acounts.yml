@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  acount_number: 1
+  suplier: one
+
+two:
+  acount_number: 1
+  suplier: two

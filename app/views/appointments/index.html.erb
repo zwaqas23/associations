@@ -1,0 +1,18 @@
+<h1> Show all Appointments </h1>
+<%=link_to "Create new Appointment" , new_appointment_path%> | <%=link_to "Create new Patient" , new_patient_path%> | <%=link_to "Create new Physicians" , new_physician_path%> 
+<table>
+	<tr>
+		<th>Patients ID</th>
+		<th>Patient Name</th> 
+		<th>Physicians ID</th>
+		<th>Physician Name</th>
+	</tr>
+		<% @appointments.each do |d|%>
+	<tr>
+		<td><%= d.patient.try(:id) %></td>	
+		<td><%= d.patient.name %></td>	
+		<td><%= d.physician.try(:id) %></td>					
+		<td><%= d.physician.name %></td>		
+	</tr>
+<% end %>
+</table>

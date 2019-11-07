@@ -1,0 +1,14 @@
+<h1> Show all Authers </h1>
+<%=link_to "Create new Auther" , new_auther_path%> | <%=link_to "Create new Book" , new_book_path%> 
+<table>
+	<tr>
+		<th>Id</th>
+		<th>Name</th>
+	</tr>
+	<% @authers.each do |f| %>
+	<tr>
+		<td><%= f.id %></td>
+		<td><%= f.name %></td>
+	</tr>
+	<% end %>
+</table>

@@ -1,0 +1,15 @@
+<h1>Add Patients</h1>
+
+<%= form_for @patient do |f|%>
+	<p>
+		<%=f.label :name%>
+		<%=f.text_field :name%>
+	</p>
+	<p>
+		<%=f.submit%>
+	</p>
+
+
+
+<% end %>
+

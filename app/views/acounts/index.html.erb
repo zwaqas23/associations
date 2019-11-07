@@ -1,0 +1,15 @@
+<h1>Show all Acounts Details</h1>
+<%=link_to "Create new Acount" , new_acount_path%> | <%=link_to "Create new Supplier" , new_suplier_path%> 
+<table>
+	<tr>
+		<th>ACOUNT NUMBERS</th>
+		<th>SUPPLIERS ID</th>
+	</tr>
+	<tr>
+		<% @acounts.each do |z|%>
+			<td><%=z.acount_number%></td>
+			<td><%=z.suplier.try(:id)%></td>
+		</tr>
+		<% end %>
+</table>
+

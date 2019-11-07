@@ -1,0 +1,20 @@
+<h1> Show all Books </h1>
+<%=link_to "Create new Auther" , new_auther_path%> | <%=link_to "Create new Book" , new_book_path%> 
+<table>
+	<tr>
+		<th>ID</th>
+		<th>NAME</th>
+		<th>book id</th>
+	</tr>
+	<% @books.each do |d|%>
+	<tr>
+		
+		<td><%=d.id %></td>
+		<td><%= d.name %></td>
+		<td><%= d.auther.try(:id) %></td>		
+
+
+		
+	</tr>
+<% end %>
+</table>

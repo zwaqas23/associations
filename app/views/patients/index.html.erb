@@ -1,0 +1,16 @@
+<h1>Show All Patients</h1>
+<%=link_to "Create new Appointment" , new_appointment_path%> | <%=link_to "Create new Patient" , new_patient_path%> | <%=link_to "Create new Physicians" , new_physician_path%> 
+<table>
+	<tr>
+		<th>ID</th>
+		<th>NAME</th>
+	</tr>
+	<tr>
+		<% @patients.each do |z|%>
+			<td> <%= z.id%></td>
+			<td> <%= z.name%></td>
+
+		
+	</tr><% end %>
+
+</table>

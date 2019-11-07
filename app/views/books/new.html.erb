@@ -1,0 +1,18 @@
+<h1> Add Books</h1>
+
+<%= form_for @book do |b| %>
+
+<p>
+	<%= b.label :name%>
+	<%= b.text_field :name%>
+	</p>
+	<p>
+		<%= b.label :auther_id %>
+		<%= b.text_field :auther_id %>
+	</p>
+	<p>
+	<%= b.submit %>
+	
+	</p>
+
+	<% end %> 
